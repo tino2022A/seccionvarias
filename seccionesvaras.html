@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Página principal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  </head>
+  <body>
+    <header>
+      <img src="logo.png" alt="Logo de la página" style="display: block; margin: 0 auto;">
+    </header>
+    <nav>
+      <ul>
+        <li><a href="page1.html">Página 1</a></li>
+        <li><a href="page2.html">Página 2</a></li>
+        <li><a href="page3.html">Página 3</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Bienvenido a mi página web</h1>
+      <div class="seccion">
+        <img src="imagen1.jpg" alt="Imagen 1">
+        <p>Contenido de la sección 1.</p>
+        <a href="page1.html">Seguir leyendo</a>
+      </div>
+      <div class="seccion">
+        <img src="imagen2.jpg" alt="Imagen 2">
+        <p>Contenido de la sección 2.</p>
+        <a href="page2.html">Seguir leyendo</a>
+      </div>
+      <div class="seccion">
+        <img src="imagen3.jpg" alt="Imagen 3">
+        <p>Contenido de la sección 3.</p>
+        <a href="page3.html">Seguir leyendo</a>
+      </div>
+      <div class="carrusel">
+        <div><img src="https://github.com/lucidrains/musiclm-pytorch/blob/main/musiclm.png" alt="Imagen 1"></div>
+        <div><img src="https://github.com/tino2022A/shoppin-online/blob/main/600.jpg" alt="Imagen 2"></div>
+        <div><img src="https://drive.google.com/file/d/10m3oIwowl7ukcPhMhwcc43V0qhiIDUvr/view?usp=share_link" alt="Imagen 3"></div>
+        <div><img src="https://drive.google.com/file/d/10m3oIwowl7ukcPhMhwcc43V0qhiIDUvr/view?usp=sharing" alt="Imagen 4"></div>
+        <div><img src="imagen5.jpg" alt="Imagen 5"></div>
+        <div><img src="imagen6.jpg" alt="Imagen 6"></div>
+        <div><img src="imagen7.jpg" alt="Imagen 7"></div>
+        <div><img src="imagen8.jpg" alt="Imagen 8"></div>
+        <div><img src="imagen9.jpg" alt="Imagen 9"></div>
+        <div><img src="imagen10.jpg" alt="Imagen 10"></div>
+      </div>
+      <div class="redes-sociales">
+        <a href="https://twitter.com/mi_usuario"><img src="twitter.png" alt="Twitter"></a>
+        <a href="https://wa.me/mi_numero"><img src="whatsapp.png" alt="WhatsApp"></a>
+        <a href="https://t.me/mi_canal"><img src="telegram.png" alt="Telegram"></a>
+      </div>
+    </main>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.carrusel').slick({
+          autoplay: true,
+          autoplaySpeed: 2000,
+          dots: true,
+          arrows: false,
+          infinite: true,
+          speed: 500,
+          fade: true,
+          cssEase: 'linear'
+        });
+      });
+    </script>
+  </body>
+</html>
